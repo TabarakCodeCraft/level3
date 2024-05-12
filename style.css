@@ -6,6 +6,7 @@
 main{
     height: 100vh;
     display: flex;
+    overflow: hidden;
 }
 main .sidebar{
     height: 100%;
@@ -13,8 +14,8 @@ main .sidebar{
     background: #4C8DEB;
     display: flex;
     flex-direction: column;
-  
 }
+
 .sidebar .avatar{
     width: 44px;
     height: 44px;
@@ -55,6 +56,7 @@ main .layout{
     width: calc(100% - 60px);
 }
 main .layout header{
+    top: 0;
     position: sticky;
     height: 70px;
     width: 100%;
@@ -67,7 +69,6 @@ header .content {
     align-items: center;
     justify-content: space-between;
 }
-
 .content .search{
     margin-left: 20px;
     margin-top: 15px;
@@ -115,6 +116,7 @@ main .layout .page{
     height: 100%;  
     display: flex;
     gap: 10px;
+    overflow: auto;
 
 }
 .page .left{
@@ -261,11 +263,10 @@ width: 30%;
      font-size: 16px;
      font-weight: 700;
      }
- 
-
      .right .btn{
         display: flex;
-        margin-left: 755px;
+     justify-content: end;
+ padding: 0 10px;
         margin-top: 26px;
         margin-bottom: 10px;
         border: none;
