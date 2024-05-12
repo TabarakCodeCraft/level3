@@ -54,6 +54,7 @@ main .layout{
     background: #f1f7ff;
     height: 100%;
     width: calc(100% - 60px);
+    overflow: auto;
 }
 main .layout header{
     top: 0;
@@ -116,8 +117,6 @@ main .layout .page{
     height: 100%;  
     display: flex;
     gap: 10px;
-    overflow: auto;
-
 }
 .page .left{
 width: 30%;
